@@ -1,0 +1,3 @@
+# Remove this when implementing your project!
+
+Store integration tests here as your project grows!

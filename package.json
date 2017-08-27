@@ -1,10 +1,16 @@
 {
-  "name": "TRERN",
+  "name": "TERRN",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "engines": {
+    "node": ">=7.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:johnhandley/TERRN.git"
+  },
   "scripts": {
-    "test": "mocha -r ts-node/register test/unit/*.ts",
+    "test": "mocha -r ts-node/register test/unit/*.ts; arma start karma.config.js --no-single-run",
     "watch": "webpack --watch"
   },
   "keywords": [],
@@ -16,7 +22,22 @@
     "mocha": "^3.5.0",
     "ts-node": "^3.3.0",
     "typescript": "^2.4.2",
-    "webpack": "^3.5.5"
+    "webpack": "^3.5.5",
+    "karma": "^0.13.22",
+    "karma-babel-preprocessor": "^6.0.1",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^1.0.1",
+    "karma-firefox-launcher": "^1.0.1",
+    "karma-ie-launcher": "^1.0.0",
+    "karma-mocha": "^1.3.0",
+    "karma-mocha-reporter": "^2.2.2",
+    "karma-phantomjs-launcher": "^1.0.4",
+    "karma-safari-launcher": "^1.0.0",
+    "karma-sourcemap-loader": "^0.3.7",
+    "karma-webpack": "^1.8.1",
+    "chai-enzyme": "^0.6.1",
+    "css-loader": "^0.23.1",
+    "enzyme": "^2.7.1"
   },
   "dependencies": {
     "@types/chai": "^4.0.4",
